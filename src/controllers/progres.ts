@@ -3,7 +3,7 @@ const price = document.querySelector<HTMLSpanElement>(".price");
 const pageViews = document.querySelector<HTMLSpanElement>(".page_views");
 range?.addEventListener("input", (e) => {
   return (function () {
-    let n: number = +e?.currentTarget?.value;
+    let n: number = +(e?.currentTarget as HTMLInputElement).value;
     price!.innerHTML = `$${n}.00`;
     if (n <= 10) {
       price!.innerHTML = `$${8}.00`;
