@@ -1,10 +1,8 @@
 export const Card = (): string => {
-  let count: number = 0;
   const windowWidthChanged = (): number => {
     let windowWidth: number;
     windowWidth = window.innerWidth;
-    console.log((count += 1), "h");
-    console.log(windowWidth, "width");
+
     return windowWidth;
   };
   window.onload = windowWidthChanged;

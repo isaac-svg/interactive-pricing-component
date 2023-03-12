@@ -8,7 +8,7 @@ export const Banner = (): string => {
   </div>
 
   <img
-  src="/public/images/pattern-circles.svg"
+  src="/images/pattern-circles.svg"
   alt="pattern circles"
   class="pattern"
 />
