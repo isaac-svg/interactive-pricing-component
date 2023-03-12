@@ -1,0 +1,74 @@
+/* rules for range */
+.input {
+  width: 100%;
+  position: relative;
+  background-color: rebeccapurple;
+}
+
+input[type="range"] {
+  display: flex;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* Chrome and Safari */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: var(--light-grayish-blue);
+  border-radius: 1.5rem;
+  height: 8px;
+  width: 100%;
+  border-radius: 8px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--soft-cyan);
+  background-image: url(/public/images/icon-slider.svg);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-top: -12px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  background-color: var(--dark-desaturated-blue);
+  height: 8px;
+  outline: none;
+  border-radius: 8px;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: var(--soft-cyan);
+  height: 8px;
+  border-radius: 8px;
+}
+input[type="range"]::-moz-range-thumb:hover {
+  background-color: var(--strong-cyan);
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--soft-cyan);
+  background-image: url(/public/images/icon-slider.svg);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-top: -12px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* IE */
+input[type="range"]::-ms-track {
+  background-color: var(--dark-desaturated-blue);
+}
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
